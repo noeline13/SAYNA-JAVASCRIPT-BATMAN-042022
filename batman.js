@@ -18,30 +18,27 @@ menu.forEach(men => {
 });
 
 //fade in 
-let title = document.querySelectorAll("h1")
+let title = document.querySelectorAll(".h1")
 for (let i = 0; i < title.length; i++) {
     title[i].classList.add("sliders")
 
 }
 
-let para = document.querySelectorAll("p")
+let para = document.querySelectorAll(".more")
 for (let i = 0; i < para.length; i++) {
-    para[i].classList.add("sliders")
+    para[i].classList.add("slidets")
 
 }
 
 
-let image = document.querySelectorAll("img")
+let image = document.querySelectorAll(".moves")
 for (let i = 0; i < image.length; i++) {
     image[i].classList.add("slider")
 
 }
 /*card*/
-/*Les images des trois héros Spiderman doivent zoomer légèrement et individuellement
-au passage de la souris */
+
 let all_card = document.querySelectorAll(".card")
-
-
 all_card.forEach(card => {
     card.addEventListener("mouseover", () => {
         card.style.transform = "scale(1.2)";
@@ -58,76 +55,136 @@ all_card.forEach(card => {
     })
 });
 
-/*button slider
-let previous = document.querySelector("#pre");
-let next = document.querySelector("#next");
-let track_image = document.querySelector("#track_image");
-let timer;
-let index_no = 0;
 
-// creation de l'image
-let track = document.createElement("imsge");
-// tous les slider
-let all_slider = [{
+//pop up du carte
 
-        img: "Assets/illustrations/Home/Batslider1.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider2.png"
-    }, {
-        img: "Assets/illustrations/Home/Batslider3.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider4.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider5.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider6.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider7.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider8.png"
-    },
-    {
-        img: "Assets/illustrations/Home/Batslider9.png"
-    },
-
-];
-
-function load_track(index_no) {
-    track_image.src = all_slider[index_no].img;
-    track.load();
-    timer = setInterval(range_slider, 1000);
-
+let popup = document.getElementById("vise");
+let hide = document.getElementsByClassName("dive");
+let confirm = document.getElementById("btns");
+let form = document.getElementById("form");
+form.onsubmit = function(e) {
+    pop(e)
 }
-load_track(index_no);
 
-// next 
-function nextSong() {
-    if (index_no < all_slider.length - 1) {
-        index_no += 1;
-        load_track(index_no);
-        playSong();
-    } else {
-        index_no = 0;
-        load_track(index_no);
-        playSong();
+
+function pop(e) {
+    e.preventDefault()
+    popup.classList.add("open");
+    hide.style.display = "none";
+}
+
+//button
+let all_button = document.querySelectorAll("button");
+all_button.forEach(button => {
+    button.addEventListener("mouseover", () => {
+        button.style.opacity = "100%";
+        button.style.transform = "scale(1.1)";
+        button.style.color = "white"
+    })
+});
+
+all_button.forEach(button => {
+    button.addEventListener("mouseout", () => {
+        button.style.opacity = "100%";
+        button.style.transform = "scale(1)";
+    })
+});
+
+
+/*scroll*/
+const scoll = document.getElementById('sect')
+window.addEventListener('scroll', () => {
+        const scroll = window.scrollY;
+        if (scroll >= 100 && scroll < 4350) {
+            scoll.style.opacity = '100%'
+
+        } else if (scroll >= 4350 && scroll < 12000) {
+            scoll.style.opacity = '100%'
+
+        }
+    })
+    /*reseau social*/
+
+// slider des image et quotation
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
 };
 
-// previous 
-function previousSong() {
-    if (index_no > 0) {
-        index_no -= 1;
-        load_track(index_no);
-        playSong();
-    } else {
-        index_no = all_slider.length;
-        load_track(index_no);
-        playSong();
+/*slider2*/
+
+let slideIndexs = 1;
+showSlidess(slideIndexs);
+
+function plusSlides(n) {
+    showSlidess(slideIndexs += n);
+    showSlidesss(slideIndexss += n);
+}
+
+function currentSlide(n) {
+    showSlidess(slideIndexs = n);
+    showSlidesss(slideIndexss = n);
+}
+
+function showSlidess(n) {
+    let i;
+    let slidess = document.getElementsByClassName("mySlides1");
+    if (n > slidess.length) { slideIndexs = 1 }
+    if (n < 1) { slideIndexs = slidess.length }
+    for (i = 0; i < slidess.length; i++) {
+        slidess[i].style.display = "none";
     }
-*/
+
+    slidess[slideIndexs - 1].style.display = "block";
+
+}
+
+/*slider3*/
+
+let slideIndexss = 1;
+showSlidesss(slideIndexss);
+
+function showSlidesss(n) {
+    let i;
+    let slidesss = document.getElementsByClassName("mySlides3");
+    if (n > slidesss.length) { slideIndexss = 1 }
+    if (n < 1) { slideIndexss = slidesss.length }
+    for (i = 0; i < slidesss.length; i++) {
+        slidesss[i].style.display = "none";
+    }
+
+    slidesss[slideIndexs - 1].style.display = "block";
+
+}
+
+//slide3
+
+let slideIndext = 0;
+showSlidest();
+
+function showSlidest() {
+    let i;
+    let slidea = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slidea.length; i++) {
+        slidea[i].style.display = "none";
+    }
+    slideIndext++;
+    if (slideIndext > slidea.length) { slideIndext = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slidea[slideIndext - 1].style.display = "block";
+    dots[slideIndext - 1].className += " active";
+    setTimeout(showSlidest, 2000); // Change image every 2 seconds
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= <!---cinqieme section du page home-->
+    <section class=" second ">
+        <h1 class="h1 ">MULTIMÉDIA</h1>
+        <div class="d-flex align-items-center ">
+            <div class=" ">
+                <img class="prev " onclick="plusSlides(-1, 1) " src="assets/Logos/Icones en + dans Home/icon_flèche_1.png " alt=" ">
+            </div>
+            <div class="slideshow ">
+                <div class="mySlides ">
+                    <div class="card slide mb-3 mt-5 me-5 " style="max-width: 550px; ">
+                        <div class="row g-4 ">
+                            <div class="col-4 ps-0 ">
+                                <img style="width: 110%; margin-left: 7%; " src="Assets/Illustrations/Home/Bathome8.png " alt="... ">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">ACTION, ADVENTURE
+                                    </h5>
+                                    <h5 class="card-title ">Batman Begins
+                                    </h5>
+                                    <h5 class="card-title "> IMDB: 8.2
+                                    </h5>
+                                    <p class="card-text " style="font-size: 12px; ">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul,
+                                        se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides ">
+                    <div class="card slide mb-3 mt-5 me-5 " style="max-width: 550px; ">
+                        <div class="row g-4 ">
+                            <div class="col-4 ps-0 ">
+                                <img style="width: 110%; margin-left: 7%; " src="Assets/Illustrations/Home/Bathome10_slide_ba.png " alt="... ">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">ACTION, ADVENTURE
+                                    </h5>
+                                    <h5 class="card-title ">The Dark Knight
+                                    </h5>
+                                    <h5 class="card-title "> IMDB: 9
+                                    </h5>
+                                    <p class="card-text " style="font-size: 12px; ">Batman aborde une phase decisive dans sa guerre contre le crime.Avec l'aide du lieutenent de police Jim Gorden et du nouveau procureur Harvey Dent, il entreprend de demanteler les dernieres organisation criminelles
+                                        qui infestent les rues de la ville.L'organisation s'avere efficace,mais le trio se heurte bientot a un nouveau genie du crime qui repond la terreur et le chaos dans Gotham: le Joker.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides ">
+                    <div class="card slide mb-3 mt-5 me-5 " style="max-width: 550px; ">
+                        <div class="row g-4 ">
+                            <div class="col-4 ps-0 ">
+                                <img style="width: 110%; margin-left: 7%; " src="Assets/Illustrations/Home/Bathome11_slide_ba.png " alt="... ">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body ">
+                                    <h5 class="card-title ">ACTION, ADVENTURE
+                                    </h5>
+                                    <h5 class="card-title ">Batman Begins
+                                    </h5>
+                                    <h5 class="card-title "> IMDB: 8.2
+                                    </h5>
+                                    <p class="card-text " style="font-size: 12px; ">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul,
+                                        se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" ms-3 ">
+                <img class="next " onclick="plusSlides(1, 1) " src="assets/Logos/Icones en + dans Home/icon_flèche_2.png " alt=" ">
+            </div>
+        </div>
+    </section>
+, initial-scale=1.0">
+    <title>Document</title>
+    s/* slider des image et quotation*/ .mySlides1 { display: none; } /* Slideshow container */ .slideshow-container1 { position: relative; } .myslides1 { height: 100%; } .myslides1 img { width: 90%; } /* Fading animation */ .fade { animation-name: fade;
+    animation-duration: 1.5s; } @keyframes fade { from { opacity: 0.4; } to { opacity: 1; } } .mySlides2 { display: none; } let slideIndex = 1; showSlides(slideIndex); function plusSlides(n) { showSlides(slideIndex += n); } function currentSlide(n) {
+    showSlides(slideIndex = n); } function showSlides(n) { let i; let slides = document.getElementsByClassName("mySlides"); if (n > slides.length) { slideIndex = 1 } if (n
+    < 1) { slideIndex=s lides.length } for (i=0 ; i < slides.length; i++) { slides[i].style.display="none"
+        ; } slides[slideIndex - 1].style.display="block" ; } </head>
+
+        <body>
+
+        </body>
+
+</html>

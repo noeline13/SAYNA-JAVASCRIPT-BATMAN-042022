@@ -193,6 +193,15 @@ select {
     left: 45.5%;
 }
 
+
+/*.social {
+    background-color: #19587d !important;
+}
+*/
+
+
+/*tous les slider*/
+
 .sliders {
     animation-duration: 5s;
     animation-name: slidein;
@@ -385,10 +394,10 @@ select {
 /* The dots/bullets/indicators */
 
 .dot {
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 2px;
-    border: 1px solid;
+    border: 1px solid var(---blue-ad-color);
     background-color: transparent;
     border-radius: 50%;
     display: inline-block;
@@ -422,8 +431,3 @@ select {
 .myslides3 {
     height: 100%;
 }
-
-
-/*.mySlides3 {
-    display: none;
-}*/

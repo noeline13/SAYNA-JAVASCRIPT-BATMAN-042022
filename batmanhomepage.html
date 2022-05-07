@@ -21,12 +21,12 @@
 
 <body>
     <!---premier section du page home-->
-    <section class="section">
+    <section class="section" id="main">
         <!---nav du premier section du page home-->
         <nav class="navbar navbar-light border border-light border-top-0 border-1">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/Assets/Logos/logohome.png" alt="" width="150" height="40">a
+                    <img src="/Assets/Logos/logohome.svg" alt="" width="150" height="40">a
                 </a>
                 <ul class="nav list-inline text-uppercase">
                     <li class="nav-item text-decoration-underline fw-bold">
@@ -45,17 +45,18 @@
             </p>
             <p class="h3 fw-bold more"> Il est Batman. </p>
             <div class="butt d-flex text-center gap-3">
-                <button type="button" class="btn px-5 py-3 border-0">VOIR LE HÉROS</button>
-                <button type="button" class="btn py-3 px-4 border-0">VOIR LES ADVERSAIRES</button>
+                <a href="#batman"><button type="button" class="btn px-5 py-3 border-0">VOIR LE HÉROS</button></a>
+                <a href="#nemesis"> <button type="button" class="btn py-3 px-4 border-0">VOIR LES ADVERSAIRES</button></a>
             </div>
             <div id="sect">
                 <img src="assets/Logos/flèche_down_header.png" alt="">
                 <div class="fleche d-flex flex-column gap-5 align-items-center">
-                    <img style="width: 58%;" src="assets/Logos/logo_bat_flèche.png" alt="">
-                    <img class=" " style="width: 23%;" src="assets/Logos/icon_facebook.png" alt="">
-                    <img class=" " style="width: 23%;" src="assets/Logos/icon_ig.png" alt="">
-                    <img class=" " style="width: 23%;" src="assets/Logos/icon_tw.png" alt="">
-                    <img style="width: 58%;" src="assets/Logos/logo_bat_flèche_2.png" alt="">
+
+                    <a href="#main"><img style="width: 70%;" src="assets/Logos/logo_bat_flèche.png" alt=""></a>
+                    <a href=""><img class=" " style="width: 100%;" src="assets/Logos/icon_facebook.png" alt=""></a>
+                    <a href=""> <img class=" " style="width: 100%;" src="assets/Logos/icon_ig.png" alt=""></a>
+                    <a href=""> <img class=" " style="width: 100%;" src="assets/Logos/icon_tw.png" alt=""></a>
+                    <a href="#footer"><img style="width: 70%;" src="assets/Logos/logo_bat_flèche_2.png" alt=""></a>
                 </div>
             </div>
 
@@ -64,7 +65,7 @@
 
     <!---second section du page home-->
     <section class="seconde ">
-        <h1 class="h1">BATMAN AU CINÉMA </h1>
+        <h1 class="h1" id="batman">BATMAN AU CINÉMA </h1>
         <p class="firs more">
             Le personnage de Batman est un super héros de l'univers de DC Comics. Il a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie de Superman,
             alors héros majeur de DC, car il n'a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l'occasion à de multiples acteurs d'interpréter l'homme chauve souris. Voici
@@ -140,7 +141,7 @@
     </section>
     <!---quatrieme section du page home-->
     <section class="second">
-        <h1 class="h1">NÉMÉSIS</h1>
+        <h1 class="h1" id="nemesis">NÉMÉSIS</h1>
         <p class="firs more">
             Batman souhaite éradiquer la criminalité de Gotham. C'est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l'occasion
             de se mesurer à des antagonistes qui défient l'imagination et les lois de la physique. Parmis les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
@@ -245,12 +246,13 @@
                                 <div class="card-body ">
                                     <h5 class="card-title ">ACTION, ADVENTURE
                                     </h5>
-                                    <h5 class="card-title ">Batman Begins
+                                    <h5 class="card-title ">The Dark Knight Rises
                                     </h5>
-                                    <h5 class="card-title "> IMDB: 8.2
+                                    <h5 class="card-title "> IMDB: 8.4
                                     </h5>
-                                    <p class="card-text " style="font-size: 12px; ">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul,
-                                        se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                                    <p class="card-text " style="font-size: 12px; ">Huit ans ont passe depuis que Batman a disparu,passant du status de heros a celui de fugitif.Le &laquo;Chevalier Noir &raquo; a tout sacrifier pour le mieux. Pendant un certaint temps, le monsonge a l'effet escompte:lea
+                                        criminalite de Gptham City est presque eliminee par le commissaire James Gordon avec l'unite anticrime d'Harvey Dent.Mais l'arrivee a Gotham de Bane, un terroriste masque,chamboulant l'ordre et pousse Bruce a sortir
+                                        de l'exil qu'il s'est impose.
                                     </p>
 
                                 </div>
@@ -264,7 +266,7 @@
             </div>
         </div>
     </section>
-    <section class=" second love">
+    <section class=" second love more">
         <div class="d-flex align-items-center just">
             <div class="slideshow-container1 ">
                 <div class="mySlides3 fadei">
@@ -278,10 +280,8 @@
                     <iframe class="slide" width="560" height="315" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-
         </div>
     </section>
-
 
     <!---six section du page home-->
 
@@ -292,35 +292,35 @@
             <h1 class="text-uppercase text-center h1">Prenons Contact</h1>
             <form id="form">
                 <div class="mb-3 ">
-                    <label for="exampleInputEmail1 " class="form-label text-uppercase ">address Email </label>
-                    <input type="email " class="form-control border-top-0 border-end-0 border-start-0 bg-transparent " id="exampleInputEmail1 " placeholder="Address Email " aria-describedby="emailHelp ">
+                    <label for="exampleInputEmail1 " class="form-label text-uppercase more">address Email </label>
+                    <input type="email " class="form-control border-top-0 border-end-0 border-start-0 bg-transparent more" id="exampleInputEmail1 " placeholder="Address Email " aria-describedby="emailHelp ">
                 </div>
                 <div class="mb-3 pt-5 pb-5 ">
-                    <h6 class="form-label text-uppercase pb-4 ">NEWSLETTER</h6>
-                    <div class="form-check pb-3 ">
-                        <label class="form-check-label order-1 " for="gridCheck ">
+                    <h6 class="form-label text-umoreppercase pb-4 more">NEWSLETTER</h6>
+                    <div class="form-check pb-3 more">
+                        <label class="form-check-label order-1 " for="gridCheck">
                          En cochant cette case vous acceptez de recevoir l'actualite concernant <br> les aventures de Batman:
                         </label>
                         <input class="form-check-input order-2 " type="checkbox " id="gridCheck ">
                     </div>
-                    <select class="form-select border-top-0 border-end-0 border-start-0 bg-transparent " aria-label="Default select example ">
+                    <select class="form-select border-top-0 border-end-0 border-start-0 bg-transparent more" aria-label="Default select example ">
                         <option  selected>Choisissez la frequance a la quelle vous souhaitez recevoir votre newslwtter selected</option>
                         <option value="1 ">One</option>
                         <option value="2 ">Two</option>
                         <option value="3 ">Three</option>
                       </select>
-                    <input type="# " class="form-control mt-5 border-top-0 border-end-0 border-start-0 bg-transparent " id="exa " placeholder="Souhaitez vous recevoir des news " aria-describedby="emailHelp ">
-                    <div class="btn-group mob gap-5" role="group" aria-label="Basic example">
-                        <button type="button" class="btn border text-light">Des films</button>
-                        <button type="button" class="btn border text-light">Des comics</button>
-                        <button type="button" class="btn border text-light">De tout</button>
+                    <input type="# " class="more form-control mt-5 border-top-0 border-end-0 border-start-0 bg-transparent " id="exa " placeholder="Souhaitez vous recevoir des news " aria-describedby="emailHelp " disabled>
+                    <div class="btn-group mob gap-5 more" role="group" aria-label="Basic example">
+                        <button type="button" class="btn border  text-light">Des films</button>
+                        <button type="button" class="btn border  text-light">Des comics</button>
+                        <button type="button" class="btn border   text-light">De tout</button>
                     </div>
                 </div>
-                <div class="mb-3 ">
+                <div class="mb-3 more">
                     <label for="exampleFormControlTextarea1 " class="form-label text-uppercase ">messages</label>
                     <textarea class="form-control border-top-0 border-end-0 border-start-0 bg-transparent " id="exampleFormControlTextarea1 " rows="1 " placeholder="Laiser un commentaire pour la communiter "></textarea>
                 </div>
-                <button id="btns" class="btn submit text-uppercase ">confirmer</button>
+                <button id="btns" class="btn submit text-uppercase moves">confirmer</button>
             </form>
         </div>
     </section>
@@ -330,100 +330,101 @@
         <h1 class="text-center text-uppercase">messages recue !</h1>
     </section>
 
-    <footer class="bg-dark ">
+    <footer id="footer ">
         <!-- quotation-->
-        <div class="p-5 ">
+        <div class="p-5 moves">
             <img class="left " src="assets/Logos/Icones en + dans Home/icon_guillemets_1.png " alt=" ">
         </div>
-        <div class="slideshow-container2 d-flex">
-
-            <div class="mySlides2 fades">
+        <div class="slideshow-container2 ">
+            <div class="mySlides2 fades ">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. </p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        The Dark Knight :Le Chevalier Noir - <cite title="Source Title">- Le Joker a Batman (2008)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>2A well-known quote, contained in a blockquote element.</p>
+                        <p>Soit on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        The Dark Knight :Le Chevalier Noir <cite title="Source Title">- Harvey Dent (2008)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>3A well-known quote, contained in a blockquote element.</p>
+                        <p>Le héros peut àtre en chacun, mème en celui qui fait une chose aussi simple et rassurante que mettre un manteau sur les épaules d'un garçon et ainsi lui faire comprendre que le monde ne s'est pas écroulé. </p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        The Dark Knight Pisés <cite title="Source Title">- Batman à Jamas Gordon (2012)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>4A well-known quote, contained in a blockquote element.</p>
+                        <p>Ah ITo crois que l'obscurité est ton allié. Tu n'a fait qu'adopter la pénombre. Moi je suie nê dedans, j'ai été façonné par elle. Je n'ai découvert la lumière qu'a l'âge d'homme, et alors, elle m'a juste paru AVEUGLANTE I </p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    <figcaption class="blockquote-footer">The Dark Knight Frises
+                        <cite title="Source Title">- Bane à Benne, (2012)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>5A well-known quote, contained in a blockquote element.</p>
+                        <p>- Je vous prépare la batmoto monsieur ?<br> - En pleine journée Alfred ? Pas très subtile. <br> - La Lamborghini alors... beaucoup plus subtile.
+                        </p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        The Dark Knight: Le Chevalier Noir <cite title="Source Title">- Alfred et Berna, (2008)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>6A well-known quote, contained in a blockquote element.</p>
+                        <p>Free, t'es givré .</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        Sala, b Robin <cite title="Source Title">- Batman à Mr Freeze (1997)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>7A well-known quote, contained in a blockquote element.</p>
+                        <p>La peur est un outil. Cette lumière qui déchire le ciel, ce n'est pas qu'un appel à l'aide. C'est un avertissement.</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        Batman <cite title="Source Title">- Batman (2022)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>8A well-known quote, contained in a blockquote element.</p>
+                        <p>- Pourquoi tombons nous Bruce <br> - Pour mieux apprendre a nous relever.
+                        </p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    <figcaption class="blockquote-footer">Hetman Begins
+                        <cite title="Source Title">- Thomas Wayne Bruce Wayne 8 ans (2005)</cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="mySlides2 fades">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>9A well-known quote, contained in a blockquote element.</p>
+                        <p>Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C'est comme cela que ça commence, monsieur. De la fureur, de la flévre, un sentiment d'impuissance, qui rend les hommes bien... cruels.</p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    <figcaption class="blockquote-footer">Batman v Superman l'aube de la justice,
+                        <cite title="Source Title">Alf red à Batman (2016</cite>
                     </figcaption>
                 </figure>
             </div>
@@ -441,25 +442,25 @@
             <span class="dot"></span>
         </div>
 
-        <div class="pb-5">
+        <div class="pb-5 moves">
             <img class="right " src="assets/Logos/Icones en + dans Home/icon_guillemets_2.png " alt=" ">
         </div>
         <!-- wb-->
         <div class="text-center ">
             <div class="container-fluid ">
-                <div class=" ">
+                <div class="more ">
                     <img src="Assets/Logos/icon_WB.png " alt=" " width="30 " height="24 " class="d-inline-block align-text-top "> Ce projet respecte l'univers cinematographique des film Batman recents. Version Nolan & Snyder & Reevers
                 </div>
             </div>
         </div>
         <!--icon-->
-        <div class="py-5 text-center gap-5 ">
+        <div class="py-5 text-center gap-5 more">
             <img class=" " style="width: 3%; " src="assets/Logos/logo_sayna_white.png " alt=" ">
             <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_x.png " alt=" ">
-            <img class="ps-3 " style="width: 5%; " src="assets/Logos/icon_DC.png " alt=" ">
-            <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_facebook.png " alt=" ">
-            <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_ig.png " alt=" ">
-            <img class="ps-3 " style="width: 3%; " src="assets/Logos/icon_tw.png " alt=" ">
+            <img class="ps-3 " style="width: 5%;" src="assets/Logos/icon_DC.svg " alt=" ">
+            <a href=""><img class="ps-3  " style="width: 3%;" src="assets/Logos/icon_facebook.png" alt=""></a>
+            <a href=""> <img class="ps-3  " style="width: 3%;" src="assets/Logos/icon_ig.png" alt=""></a>
+            <a href=""> <img class="ps-3  " style="width: 3%;" src="assets/Logos/icon_tw.png" alt=""></a>
         </div>
     </footer>
 </body>

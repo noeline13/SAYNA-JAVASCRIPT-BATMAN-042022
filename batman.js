@@ -17,19 +17,24 @@ menu.forEach(men => {
     })
 });
 
-//fade in 
+//fade in  
+
+//titre
 let title = document.querySelectorAll(".h1")
 for (let i = 0; i < title.length; i++) {
     title[i].classList.add("sliders")
 
 }
 
+//paragraphe
 let para = document.querySelectorAll(".more")
 for (let i = 0; i < para.length; i++) {
     para[i].classList.add("slidets")
 
 }
 
+
+//image
 
 let image = document.querySelectorAll(".moves")
 for (let i = 0; i < image.length; i++) {
@@ -89,21 +94,6 @@ all_button.forEach(button => {
         button.style.transform = "scale(1)";
     })
 });
-
-
-/*scroll*/
-const scoll = document.getElementById('sect')
-window.addEventListener('scroll', () => {
-        const scroll = window.scrollY;
-        if (scroll >= 100 && scroll < 4350) {
-            scoll.style.opacity = '100%'
-
-        } else if (scroll >= 4350 && scroll < 12000) {
-            scoll.style.opacity = '100%'
-
-        }
-    })
-    /*reseau social*/
 
 // slider des image et quotation
 let slideIndex = 0;
@@ -188,3 +178,52 @@ function showSlidest() {
     dots[slideIndext - 1].className += " active";
     setTimeout(showSlidest, 2000); // Change image every 2 seconds
 }
+
+//choix et cliquer les button
+let choix = document.querySelectorAll(".mob button")
+choix.forEach(bit => {
+    bit.addEventListener("mouseover", () => {
+        bit.style.background = " linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)";
+
+    })
+});
+
+choix.forEach(bit => {
+    bit.addEventListener("mouseout", () => {
+        bit.style.background = "transparent"
+    })
+});
+
+
+// scroll du page
+
+
+function apparaitre(element) {
+    const debut = element.getBoundingClientRect().top;
+    return debut <= window.innerHeight
+}
+
+function addClass(element, className) {
+    element.classList.add(className)
+}
+
+function removeClass(element, className) {
+    element.classList.remove(className)
+}
+
+
+function AnimScroll(tabListe, Class) {
+    tabListe.forEach(element => {
+        if (apparaitre(element)) {
+            addClass(element, Class)
+        } else {
+            removeClass(element, Class)
+        }
+    });
+};
+
+window.addEventListener('scroll', () => {
+    AnimScroll(title, 'sliders')
+    AnimScroll(para, 'slidets')
+    AnimScroll(image, 'slider')
+})

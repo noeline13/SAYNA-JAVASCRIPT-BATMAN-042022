@@ -90,6 +90,7 @@ button {
 
 .butt {
     margin-left: 30%;
+    margin-top: 10%;
 }
 
 .cadre,
@@ -189,6 +190,10 @@ select {
 
 /*footer */
 
+#footer {
+    background-color: #0D0E09;
+}
+
 .left {
     margin: 10%;
 }
@@ -264,7 +269,7 @@ select {
 
 .pup {
     position: absolute;
-    top: 475%;
+    top: 459%;
     width: 85%;
     margin: 0 0 0 8%;
     padding: 28% 0;
@@ -315,7 +320,7 @@ select {
 
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 
 @keyframes fade {
@@ -382,7 +387,12 @@ select {
 
 .slideshow-container2 {
     position: relative;
-    margin-left: 30%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.slideshow-container2 p {
+    font-size: 16px;
 }
 
 

@@ -42,6 +42,22 @@ for (let i = 0; i < image.length; i++) {
 
 }
 
+//image
+
+let social = document.querySelectorAll(".social")
+social.forEach(icon => {
+    icon.addEventListener("mouseover", () => {
+        icon.style.transform = "scale(1.5)";
+
+    })
+});
+
+social.forEach(icon => {
+    icon.addEventListener("mouseout", () => {
+        icon.style.transform = "scale(1)";
+    })
+});
+
 /*card*/
 
 let all_card = document.querySelectorAll(".card")
@@ -184,8 +200,7 @@ function showSlidest() {
 let choix = document.querySelectorAll(".mob button")
 choix.forEach(bit => {
     bit.addEventListener("mouseover", () => {
-        bit.style.background = " linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)";
-
+        bit.style.background = " linear-gradient(90deg,#eddebf ,#19587d)";
     })
 });
 

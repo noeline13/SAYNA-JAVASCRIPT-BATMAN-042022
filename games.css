@@ -78,6 +78,7 @@ button {
     background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
     padding: 2% 8%;
     border: none;
+    font-size: 18px;
 }
 
 .img-fluid {

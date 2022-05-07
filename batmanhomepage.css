@@ -141,8 +141,12 @@ button {
 /*sept section du page home*/
 
 .sept {
-    background: linear-gradient(45deg, var(---reds-ad-color) 0%, rgb(0, 12, 19) 100%);
+    background: linear-gradient(90deg, #4e4e45, #6bc0f1);
     padding: 5% 15%;
+}
+
+.mob button {
+    border-image: linear-gradient(90deg, var(--white-ad-color), #19587d)1 !important;
 }
 
 .submit {
@@ -370,6 +374,7 @@ select {
     position: relative;
     margin-left: 25%;
     width: 50%;
+    height: 10vh;
 }
 
 .slideshow-container2 p {

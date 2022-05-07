@@ -43,18 +43,34 @@ for (let i = 0; i < image.length; i++) {
 }
 
 //image
+//social media
 
 let social = document.querySelectorAll(".social")
 social.forEach(icon => {
     icon.addEventListener("mouseover", () => {
         icon.style.transform = "scale(1.5)";
-
+        icon.style.filter = "opacity(0.5) drop-shadow(0 0 0 yellow)";
     })
 });
 
 social.forEach(icon => {
     icon.addEventListener("mouseout", () => {
         icon.style.transform = "scale(1)";
+        icon.style.filter = "brightness(1)";
+    })
+});
+
+//image fleche et logo
+let socials = document.querySelectorAll(".socials")
+socials.forEach(icons => {
+    icons.addEventListener("mouseover", () => {
+        icons.style.filter = "opacity(0.5) drop-shadow(0 0 0 yellow)";
+    })
+});
+
+socials.forEach(icons => {
+    icons.addEventListener("mouseout", () => {
+        icons.style.filter = "opacity(1) drop-shadow(0 0 0 yellow)";
     })
 });
 

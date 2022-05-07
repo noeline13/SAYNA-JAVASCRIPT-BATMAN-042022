@@ -41,6 +41,7 @@ for (let i = 0; i < image.length; i++) {
     image[i].classList.add("slider")
 
 }
+
 /*card*/
 
 let all_card = document.querySelectorAll(".card")

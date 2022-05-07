@@ -33,15 +33,6 @@ button {
 }
 
 
-/*automatic Navigation*/
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    margin-top: 460px;
-}
-
-
 /*premier section du page home*/
 
 .section {
@@ -73,16 +64,6 @@ button {
     position: fixed;
     top: 50%;
     left: 85.9%;
-}
-
-.navbar-light .navbar-brand::before {
-    content: "";
-    background: red;
-}
-
-.navbar-light .navbar-brand::after {
-    content: "";
-    background: red;
 }
 
 

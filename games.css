@@ -86,3 +86,23 @@ button {
     width: 80%;
     margin: 0 5%;
 }
+
+
+/* -----------quiz1----------------------- */
+
+.allQuiz {
+    background-color: #000;
+}
+
+.quiz1,
+.quiz2 {
+    padding: 80px 0px 0px 40px;
+}
+
+.question>span {
+    background-color: #c4c4c4a3;
+    display: block;
+    width: 400px;
+    padding-left: 10px;
+    margin-top: 20px;
+}

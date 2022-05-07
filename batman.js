@@ -226,6 +226,12 @@ choix.forEach(bit => {
     })
 });
 
+choix.forEach(bit => {
+    bit.addEventListener("onclick", () => {
+        bit.style.background = " linear-gradient(90deg,#eddebf ,#19587d)";
+    })
+});
+
 
 // scroll du page
 

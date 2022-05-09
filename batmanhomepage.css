@@ -194,12 +194,6 @@ select {
 }
 
 
-/*.social {
-    background-color: #19587d !important;
-}
-*/
-
-
 /*tous les slider*/
 
 .sliders {
@@ -262,10 +256,7 @@ select {
 /*pup up*/
 
 .pup {
-    position: absolute;
-    top: 435%;
-    width: 85%;
-    margin: 0 0 0 8%;
+    margin-left: 6%;
     padding: 28% 0;
     border-radius: 5%;
     box-shadow: 0em 1px var(---reds-ad-color), -0em 0 .4em rgb(0, 12, 19);

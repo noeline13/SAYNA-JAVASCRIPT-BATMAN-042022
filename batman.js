@@ -97,7 +97,7 @@ all_card.forEach(card => {
 //pop up du carte
 
 let popup = document.getElementById("vise");
-let hide = document.getElementsByClassName("dive");
+let hide = document.querySelector(".dive");
 let confirm = document.getElementById("btns");
 let form = document.getElementById("form");
 form.onsubmit = function(e) {

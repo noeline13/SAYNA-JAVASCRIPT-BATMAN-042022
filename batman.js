@@ -42,7 +42,7 @@ for (let i = 0; i < image.length; i++) {
 
 }
 
-//image
+
 //social media
 
 let social = document.querySelectorAll(".social")

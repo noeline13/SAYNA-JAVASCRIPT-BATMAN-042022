@@ -20,19 +20,11 @@ menu.forEach(men => {
 //fade in  
 
 //titre
-let title = document.querySelectorAll(".h1")
+let title = document.querySelectorAll("h1")
 for (let i = 0; i < title.length; i++) {
     title[i].classList.add("sliders")
 
 }
-
-//paragraphe
-let para = document.querySelectorAll(".more")
-for (let i = 0; i < para.length; i++) {
-    para[i].classList.add("slidets")
-
-}
-
 
 //image
 
@@ -85,4 +77,50 @@ button.addEventListener("mouseover", () => {
 
 button.addEventListener("mouseout", () => {
     button.style.transform = "scale(1)";
+})
+
+//button
+let all_button = document.querySelectorAll("button");
+all_button.forEach(button => {
+    button.addEventListener("mouseover", () => {
+        button.style.opacity = "100%";
+        button.style.transform = "scale(1.1)";
+        button.style.color = "white"
+    })
+});
+
+all_button.forEach(button => {
+    button.addEventListener("mouseout", () => {
+        button.style.opacity = "100%";
+        button.style.transform = "scale(1)";
+    })
+});
+
+function apparaitre(element) {
+    const debut = element.getBoundingClientRect().top;
+    return debut <= window.innerHeight
+}
+
+function addClass(element, className) {
+    element.classList.add(className)
+}
+
+function removeClass(element, className) {
+    element.classList.remove(className)
+}
+
+
+function AnimScroll(tabListe, Class) {
+    tabListe.forEach(element => {
+        if (apparaitre(element)) {
+            addClass(element, Class)
+        } else {
+            removeClass(element, Class)
+        }
+    });
+};
+
+window.addEventListener('scroll', () => {
+    AnimScroll(title, 'sliders')
+    AnimScroll(image, 'slider')
 })

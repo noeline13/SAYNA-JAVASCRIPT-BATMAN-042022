@@ -88,10 +88,50 @@ button {
 }
 
 
+/* --------------sliders-------------------- */
+
+.sliders {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.slider {
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
 /* -----------quiz1----------------------- */
 
 .allQuiz {
     background-color: #000;
+}
+
+.quizz {
+    margin: 0 10%;
 }
 
 .quiz1,

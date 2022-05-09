@@ -26,6 +26,7 @@ for (let i = 0; i < title.length; i++) {
 
 }
 
+
 //image
 
 let image = document.querySelectorAll(".moves")
@@ -95,6 +96,9 @@ all_button.forEach(button => {
         button.style.transform = "scale(1)";
     })
 });
+
+// scroll
+
 
 function apparaitre(element) {
     const debut = element.getBoundingClientRect().top;
